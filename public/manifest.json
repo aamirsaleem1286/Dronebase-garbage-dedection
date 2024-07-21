@@ -1,0 +1,36 @@
+{
+    "theme_color": "#fff",
+    "background_color": "#ffff",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Dronebase Detect",
+    "short_name": "Drone Detect",
+    "description": "Hardware-Accelerated Deep Learning For Drone-Based Garbage Detection",
+    "icons": [
+        {
+            "src": "/welcomeimage.jpg",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/welcomeimage.jpg",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/welcomeimage.jpg",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/welcomeimage.jpg",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
