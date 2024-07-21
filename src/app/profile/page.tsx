@@ -71,7 +71,7 @@ const Page = () => {
     const handleFormSubmit = () => {
         // Directly update profile image in the UI
         // Display success toast message
-        Toast.SuccessshowToast("Profile image updated successfully");
+        Toast.SuccessshowToast("Your information has updated successfully");
         setShowEditModal(false);
     };
 
