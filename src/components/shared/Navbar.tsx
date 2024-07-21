@@ -29,7 +29,7 @@ const Navbar = () => {
                 <div className="flex gap-12 items-center">
                     <Link href={"/dashboard"} className="flex justify-center gap-1 items-center flex-col">
                         <RiDashboardLine size={32} />
-                        <span className="text-xs font-medium opacity-70">Dashboard</span>
+                        <span className="text-xs font-medium opacity-70">Stats</span>
                     </Link>
                     <Link href={"/profile"} className="flex justify gap-1 items-center flex-col">
                         <User size={32} />

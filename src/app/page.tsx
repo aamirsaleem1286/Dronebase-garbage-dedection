@@ -11,7 +11,6 @@ import icon4 from "../../public/user.png";
 import Image from "next/image";
 import { FaMapMarkerAlt, FaVideo, FaRaspberryPi, FaChartBar } from "react-icons/fa";
 
-
 export interface ApiResponse {
     message: string;
     userData: UserData;
@@ -100,36 +99,36 @@ const Page = () => {
 
         return totalCO2Saved;
     };
-const stats = [
-    {
-        icon: <FaMapMarkerAlt size={38} color="white" />,
-        color: "#F39513",
-        title: "Map View",
-        value: "",
-        valueSize: "text-xl",
-    },
-    {
-        icon: <FaVideo size={38} color="white" />,
-        color: "#FF6869",
-        title: "Live Streaming",
-        value: "",
-        valueSize: "text-2xl",
-    },
-    {
-        icon: <FaRaspberryPi size={38} color="white" />,
-        color: "#6698FF",
-        title: "Real Time Monitoring Raspberry Pi",
-        value: "",
-        valueSize: "text-2xl",
-    },
-    {
-        icon: <FaChartBar size={38} color="white" />,
-        color: "#FE8330",
-        title: "Detail Statistics",
-        value: "",
-        valueSize: "text-medium",
-    },
-];
+    const stats = [
+        {
+            icon: <FaMapMarkerAlt size={38} color="white" />,
+            color: "#F39513",
+            title: "Map View",
+            value: "",
+            valueSize: "text-xl",
+        },
+        {
+            icon: <FaVideo size={38} color="white" />,
+            color: "#FF6869",
+            title: "Live Streaming",
+            value: "",
+            valueSize: "text-2xl",
+        },
+        {
+            icon: <FaRaspberryPi size={38} color="white" />,
+            color: "#6698FF",
+            title: "Real Time Monitoring Raspberry Pi",
+            value: "",
+            valueSize: "text-2xl",
+        },
+        {
+            icon: <FaChartBar size={38} color="white" />,
+            color: "#FE8330",
+            title: "Detail Statistics",
+            value: "",
+            valueSize: "text-medium",
+        },
+    ];
 
     return (
         <section className="flex flex-col gap-3 pt-2">
@@ -141,7 +140,7 @@ const stats = [
                 <>
                     {user ? (
                         <section className=" p-2 flex flex-col gap-8 relative">
-                            <div className="flex items-center justify-between bg-[#0F1C3A] "style={{borderTopRightRadius: "80px",paddingLeft:"4px",marginLeft: "-8px",marginRight:" -7px",marginTop: "-15px", height:"75px",paddingRight: "20px"}}>
+                            <div className="flex items-center justify-between bg-[#0F1C3A] " style={{ borderTopRightRadius: "80px", paddingLeft: "4px", marginLeft: "-8px", marginRight: " -7px", marginTop: "-15px", height: "75px", paddingRight: "20px" }}>
                                 <Link href={"/profile"} className="flex items-center gap-3">
                                     <img src={"/profile.jpg"} className=" w-12 h-12 rounded-xl" alt="" />
                                     <div className="flex flex-col gap-0">
@@ -320,7 +319,7 @@ const stats = [
                                 </div>
                             </section> */}
 
-                            <div className="grid grid-cols-2 gap-4 justify-center mx-2 md:mx-4 lg:mx-[30px] bg-gray-300" style={{ marginTop: "20px" ,padding:"10px"}}>
+                            <div className="grid grid-cols-2 gap-4 justify-center mx-2 md:mx-4 lg:mx-[30px] bg-gray-300" style={{ marginTop: "20px", padding: "10px" }}>
                                 {stats.map(({ icon, color, title, value, valueSize }, index) => (
                                     <div key={index} className="w-full border-[#0F1C3A] bg-[#0F1C3A] sm:w-auto rounded-lg p-4 flex flex-col items-center justify-center text-center">
                                         <div className="w-12 h-12 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-2">{icon}</div>
@@ -393,7 +392,7 @@ const stats = [
                                     </div>
                                     <div className="flex justify-center ">
                                         <button style={{ width: "230px", height: "60px", whiteSpace: "nowrap", display: "flex", justifyContent: " center", alignItems: "center", padding: "5px", borderRadius: "20px" }} className="inline-flex text-white font-bold bg-[#0F1C3A] py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                                            <Link href="/report">Contact Us</Link>
+                                            <Link href="https://api.whatsapp.com/send?phone=923242846072">Contact Us</Link>
                                         </button>
                                         <button style={{ width: "180px", height: "60px", whiteSpace: "nowrap", display: "flex", marginRight: "10px", justifyContent: " center", alignItems: "center", borderRadius: "25px", backgroundColor: "lightgray" }} className="ml-4 inline-flex font-bold text-black   border-2 border-black py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
                                             <Link href="/report"> Report a Complaint</Link>
