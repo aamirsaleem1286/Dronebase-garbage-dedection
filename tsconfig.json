@@ -28,6 +28,6 @@
     ".next/types/**/*.ts",
     "src/app/api/auth/[...nextauth]/route.js",
     "types/**/*.d.ts"  // Add this line
-, "src/app/location/page.js"  ],
+, "src/app/location/page.tsx"  ],
   "exclude": ["node_modules"]
 }
